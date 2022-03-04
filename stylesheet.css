@@ -1,0 +1,102 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  margin: 0%;
+}
+/* Helper class To be deleted from the Html file */
+.border {
+  border: solid red 1px;
+}
+.background-helper {
+  background-color: #f2f2f2;
+  border-radius: 1em;
+}
+
+footer.background-helper {
+  border-radius: 0;
+}
+
+/* Helper class To be deleted from the Html file */
+
+header {
+  padding: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: #0065fc;
+}
+
+.navlink-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-image {
+  width: 150px;
+  background-image: url(./assets/images/logo/Booki.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+
+.nav-link {
+  margin: 1em;
+  padding: 0;
+  margin: none;
+}
+
+.container {
+  padding: 1em;
+  width: 90vw;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.result-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left-section {
+  flex-grow: 1;
+  min-width: 60%;
+}
+
+.right-section {
+  margin-left: 1em;
+  flex-grow: 1;
+  min-width: 30%;
+}
+
+.side-container-header {
+  padding: 0.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
