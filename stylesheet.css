@@ -11,7 +11,7 @@ body {
 }
 .background-helper {
   background-color: #f2f2f2;
-  border-radius: 1em;
+  border-radius: 1rem;
 }
 
 footer.background-helper {
@@ -21,7 +21,10 @@ footer.background-helper {
 /* Helper class To be deleted from the Html file */
 
 header {
-  padding: 1em;
+  margin: auto;
+  width: 90vw;
+  padding: 1rem;
+  padding-top: 2rem;
 }
 
 a {
@@ -60,43 +63,334 @@ a:hover {
 }
 
 .nav-link {
-  margin: 1em;
+  margin: 1rem;
   padding: 0;
   margin: none;
 }
 
+.btn-component {
+  overflow: hidden;
+  width: min-content;
+  height: 3rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  border: solid 2px #f2f2f2;
+}
+
+.btn-component input {
+  width: 12vw;
+  height: 100%;
+  border: 0;
+  outline: none;
+  resize: none;
+  padding-left: 0.5rem;
+  font-weight: bold;
+}
+
+.btn-component button {
+  height: 100%;
+  border: 0;
+}
+
+.fa-map-marker-alt {
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+.button {
+  color: white;
+  border: none;
+  background-color: #0065fc;
+  padding: 0.25rem;
+}
+
+.filter-section {
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.filter-wrapper {
+  margin-left: 2rem;
+}
+
+.logo-circle {
+  color: #0065fc;
+  background-color: white;
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin-right: 1rem;
+}
+
+.filters-button {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 2rem;
+  color: black;
+  border: 2px solid #f2f2f2;
+  transition-duration: 0.1s;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  padding-right: 1rem;
+}
+
+.btn-icon {
+  display: flex;
+  background-color: #deebff;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin: -2px;
+  margin-right: 1rem;
+  color: #0065fc;
+  border-radius: 100%;
+}
+
 .container {
-  padding: 1em;
+  padding: 1rem;
   width: 90vw;
   margin: auto;
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .flex {
   display: flex;
-  justify-content: space-around;
 }
 
 .result-section {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 
 .left-section {
-  flex-grow: 1;
-  min-width: 60%;
+  min-width: 65%;
+  background-color: #f2f2f2;
+  border-radius: 2rem;
+  padding: 1rem;
 }
 
 .right-section {
-  margin-left: 1em;
-  flex-grow: 1;
-  min-width: 30%;
+  min-width: 25%;
+  background-color: #f2f2f2;
+  border-radius: 2rem;
+  padding: 1rem;
 }
 
 .side-container-header {
-  padding: 0.25em;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.card-accomodation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-accomodation {
+  border-radius: 1rem;
+  width: 30%;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin: 1.5rem;
+}
+
+.card-accomodation a {
+  padding: 0.25rem;
+  display: block;
+  width: auto;
+  height: 15rem;
+}
+
+.card-accomodation h3 {
+  margin: 0.5rem;
+}
+.card-accomodation p {
+  margin: 0.5rem;
+}
+
+.image-background {
+  border-radius: 0.8rem 0.8rem 0 0;
+  height: 60%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-background.image-1 {
+  background-image: url(./assets/images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+.image-background.image-2 {
+  background-image: url(./assets/images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+
+.image-background.image-3 {
+  background-image: url(./assets/images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+.image-background.image-4 {
+  background-image: url(./assets/images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+.image-background.image-5 {
+  background-image: url(./assets/images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+.image-background.image-6 {
+  background-image: url(./assets/images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+
+.image-background.image-7 {
+  background-image: url(./assets/images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+.image-background.image-8 {
+  background-image: url(./assets/images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+
+.image-background.image-9 {
+  background-image: url(./assets/images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+}
+
+.start-icon {
+  color: #0065fc;
+}
+
+.start-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0.5rem;
+}
+
+.start-icon.off {
+  color: gainsboro;
+}
+
+.card-accomodation-popular {
+  margin: 0.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  width: auto;
+  height: 11rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2.5rem;
+}
+
+.card-accomodation-popular .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  width: 60%;
+}
+
+.card-accomodation-popular .image-background {
+  border-radius: 0.8rem 0 0 0.8rem;
+  height: 100%;
+  width: 40%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 2rem;
+}
+
+.card-accomodation-popular a {
+  display: flex;
+  height: 100%;
+}
+
+.card-activity-container {
+  flex-grow: 1;
+  align-items: center;
+  margin: 0.25em;
+  height: auto;
+  height: 30em;
+  margin-right: 2rem;
+}
+
+.card-activity-container a {
+  color: black;
+  text-decoration: none;
+}
+
+.card-activity {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  height: auto;
+  width: auto;
+  border-radius: 1rem;
+}
+
+.card-activity p {
+  text-decoration: none;
+  margin-left: 1rem;
+  height: 5rem;
+}
+
+.card-activity-main {
+  height: 100%;
+  width: 50%;
+}
+
+.card-activity .image-background {
+  height: 85%;
+  width: auto;
+}
+
+.card-activity-sub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2rem;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.card-activity-second {
+  height: 60%;
+  width: auto;
+  margin-bottom: 2rem;
+}
+
+.card-activity-second .image-background {
+  height: 73%;
+}
+
+.card-activity-third {
+  height: 40%;
+}
+
+.card-activity-third .image-background {
+  height: 60.5%;
+}
+
+.reversed {
+  flex-direction: column-reverse;
+}
+
+.reversed > div.card-activity-second {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.footer-column {
+  width: 33%;
+}
+
+.footer-container {
+  justify-content: space-between;
+}
+
+.footer-link {
+  margin-bottom: 0.75rem;
+}
+
+.see-more {
+  padding-left: 0.5rem;
 }
