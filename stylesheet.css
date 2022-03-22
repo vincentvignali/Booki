@@ -19,12 +19,15 @@ footer.background-helper {
 }
 
 /* Helper class To be deleted from the Html file */
+ul {
+  margin: 0;
+}
 
 header {
   margin: auto;
   width: 90vw;
   padding: 1rem;
-  padding-top: 2rem;
+  padding-top: 0rem;
 }
 
 a {
@@ -41,7 +44,10 @@ a:hover {
 
 .navlink-container {
   display: flex;
-  align-items: center;
+  padding: 0rem;
+  align-items: flex-start;
+  margin: 0;
+  height: 15vh;
 }
 
 .navbar {
@@ -57,15 +63,31 @@ a:hover {
 }
 
 .nav-links {
+  padding: 0rem;
   display: flex;
   list-style: none;
-  padding: 0px;
+  align-items: center;
 }
 
 .nav-link {
+  font-weight: 500;
   margin: 1rem;
+  margin-top: 0rem;
+  padding-top: 0rem;
+  border-top: solid 3px #0065fc00;
+  color: #828282;
+  padding-top: 2rem;
+}
+
+.nav-link:hover {
+  border-top: solid 3px #0065fc;
+}
+
+.nav-link-active {
+  color: #0065fc;
   padding: 0;
-  margin: none;
+  padding-top: 2rem;
+  border-top: solid 3px #0065fc;
 }
 
 .btn-component {
@@ -151,7 +173,6 @@ a:hover {
 }
 
 .container {
-  padding: 1rem;
   width: 90vw;
   margin: auto;
   margin-top: 1rem;
@@ -162,15 +183,20 @@ a:hover {
 }
 
 .result-section {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   min-width: 65%;
   background-color: #f2f2f2;
   border-radius: 2rem;
   padding: 1rem;
+  margin: 0.5rem;
 }
 
 .right-section {
@@ -178,6 +204,7 @@ a:hover {
   background-color: #f2f2f2;
   border-radius: 2rem;
   padding: 1rem;
+  margin: 0.5rem;
 }
 
 .side-container-header {
@@ -194,25 +221,36 @@ a:hover {
 }
 
 .card-accomodation {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   border-radius: 1rem;
-  width: 30%;
+  width: 35%;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  margin: 1.5rem;
+  margin: 1rem;
 }
 
 .card-accomodation a {
+  padding: 0.1em;
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
   padding: 0.25rem;
-  display: block;
-  width: auto;
-  height: 15rem;
 }
 
 .card-accomodation h3 {
-  margin: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .card-accomodation p {
-  margin: 0.5rem;
+  margin-top: 0.05rem;
+  margin-bottom: 1rem;
 }
 
 .image-background {
@@ -256,30 +294,68 @@ a:hover {
 }
 
 .image-background.image-9 {
-  background-image: url(./assets/images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+  background-image: url(./assets/images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 }
 
-.start-icon {
+.image-background.image-10 {
+  background-image: url(./assets/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+}
+
+.image-background.image-11 {
+  background-image: url(./assets/images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+}
+
+.image-background.image-12 {
+  background-image: url(./assets/images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+}
+
+.image-background.image-13 {
+  background-image: url(./assets/images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+}
+
+.image-background.image-14 {
+  background-image: url(./assets/images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+}
+
+.image-background.image-15 {
+  background-image: url(./assets/images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+}
+
+.star-icon {
   color: #0065fc;
 }
 
-.start-container {
+.star-container {
   display: flex;
   flex-direction: row;
-  margin-left: 0.5rem;
 }
 
-.start-icon.off {
+.star-icon.off {
   color: gainsboro;
 }
 
+.card-accomodation-popular a {
+  display: flex;
+  height: 100%;
+}
+
+.card-accomodation-popular h3 {
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.card-accomodation-popular p {
+  margin: none;
+  margin-top: 1rem;
+}
+
 .card-accomodation-popular {
-  margin: 0.5rem;
+  margin: 0.25rem;
   border-radius: 1rem;
   background-color: white;
   width: auto;
-  height: 11rem;
-  padding: 0.5rem;
+  height: 12rem;
+  padding: 0.25rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   margin-bottom: 2.5rem;
 }
@@ -289,7 +365,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 0.75rem;
-  width: 60%;
+  width: 70%;
 }
 
 .card-accomodation-popular .image-background {
@@ -298,16 +374,11 @@ a:hover {
   width: 40%;
   background-size: cover;
   background-position: center;
-  margin-right: 2rem;
-}
-
-.card-accomodation-popular a {
-  display: flex;
-  height: 100%;
+  margin-right: 0.5rem;
 }
 
 .card-activity-container {
-  flex-grow: 1;
+  width: 100%;
   align-items: center;
   margin: 0.25em;
   height: auto;
@@ -330,7 +401,6 @@ a:hover {
 .card-activity p {
   text-decoration: none;
   margin-left: 1rem;
-  height: 5rem;
 }
 
 .card-activity-main {
@@ -393,4 +463,470 @@ a:hover {
 
 .see-more {
   padding-left: 0.5rem;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  /* Main */
+
+  .container.container-result-section {
+    width: 100vw;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .result-section {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 65%;
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 0rem;
+  }
+
+  .right-section {
+    min-width: 25%;
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 0rem;
+  }
+
+  .card-accomodation {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-radius: 1rem;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    padding: 0.15rem;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem;
+    margin-left: 1.5rem;
+  }
+  .card-accomodation-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-background.image-1 {
+    background-image: url(./assets/images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+  }
+
+  .image-background.image-2 {
+    background-image: url(./assets/images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+  }
+
+  .image-background.image-3 {
+    background-image: url(./assets/images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+  }
+
+  .image-background.image-4 {
+    background-image: url(./assets/images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+  }
+
+  .image-background.image-5 {
+    background-image: url(./assets/images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+  }
+
+  .image-background.image-6 {
+    background-image: url(./assets/images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+  }
+
+  .image-background.image-7 {
+    background-image: url(./assets/images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+  }
+
+  .image-background.image-8 {
+    background-image: url(./assets/images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg);
+  }
+
+  .image-background.image-9 {
+    background-image: url(./assets/images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+  }
+
+  .image-background.image-10 {
+    background-image: url(./assets/images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  }
+
+  .image-background.image-11 {
+    background-image: url(./assets/images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  }
+
+  .image-background.image-12 {
+    background-image: url(./assets/images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+  }
+
+  .image-background.image-13 {
+    background-image: url(./assets/images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  }
+
+  .image-background.image-14 {
+    background-image: url(./assets/images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  }
+
+  .image-background.image-15 {
+    background-image: url(./assets/images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  }
+
+  #activities > .container > .flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+
+  .card-activity-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 0em;
+    height: auto;
+    margin-right: 2rem;
+  }
+
+  .card-activity-container a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .card-activity {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    height: auto;
+    width: auto;
+    border-radius: 1rem;
+    margin-top: 2rem;
+  }
+
+  .card-activity p {
+    text-decoration: none;
+    margin-left: 1rem;
+  }
+
+  .card-activity-main {
+    height: 10rem;
+    width: 100%;
+  }
+
+  .card-activity .image-background {
+    height: 60%;
+    width: auto;
+  }
+
+  .card-activity-sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0rem;
+    height: 100%;
+    width: 100%;
+  }
+
+  .card-activity-second {
+    height: 10rem;
+    width: 100%;
+    margin-bottom: 0rem;
+  }
+
+  .card-activity-second .image-background {
+    height: 60%;
+  }
+
+  .card-activity-third {
+    height: 10rem;
+    width: 100%;
+  }
+
+  .card-activity-third .image-background {
+    height: 60%;
+  }
+
+  .reversed > div.card-activity-second {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  /* Header */
+
+  header {
+    margin: 0;
+    width: 100vw;
+    padding: 0rem;
+    padding-top: 0.5rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .navlink-container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35%;
+    width: 35%;
+    background-image: url(./assets/images/logo/Booki@3x.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .nav-links {
+    width: 100vw;
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    vertical-align: bottom;
+  }
+
+  .nav-link {
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0rem;
+    padding-bottom: 1rem;
+    border-bottom: solid 3px gray;
+    border-top: solid 0px #0065fc;
+  }
+
+  .nav-link:hover {
+    border-top: solid 0px #0065fc;
+    border-bottom: solid 3px #0065fc;
+  }
+
+  .nav-link:active {
+    border-top: solid 0px #0065fc;
+    border-bottom: solid 3px #0065fc;
+  }
+
+  .btn-component {
+    overflow: hidden;
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    border: solid 2px #f2f2f2;
+  }
+
+  .btn-component input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    resize: none;
+    padding-left: 0rem;
+    font-weight: bold;
+  }
+
+  .btn-component button {
+    height: 100%;
+    border: 0;
+  }
+
+  .fa-map-marker-alt {
+    background-color: #f2f2f2;
+    padding: 1rem;
+  }
+
+  .button {
+    color: white;
+    border: none;
+    background-color: #0065fc;
+    padding: 0.25rem;
+  }
+
+  .filter-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: flex-start;
+  }
+
+  .filter-wrapper {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0rem;
+  }
+
+  .logo-circle {
+    color: #0065fc;
+    background-color: white;
+    border: 2px solid #f2f2f2;
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin-right: 1rem;
+  }
+
+  .filters-button {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 2rem;
+    color: black;
+    border: 2px solid #f2f2f2;
+    transition-duration: 0.1s;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    padding-right: 1rem;
+  }
+
+  .btn-icon {
+    display: flex;
+    background-color: #deebff;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin: -2px;
+    margin-right: 1rem;
+    color: #0065fc;
+    border-radius: 100%;
+  }
+
+  /* Main */
+
+  #result .container {
+    width: 100vw;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-width: 65%;
+    background-color: #f2f2f2;
+    border-radius: 0rem;
+    padding: 2rem;
+    margin: 0rem;
+  }
+
+  .right-section {
+    min-width: 25%;
+    background-color: #f2f2f2;
+    border-radius: 0rem;
+    padding: 2rem;
+    margin: 0rem;
+  }
+
+  .image-background.image-1 {
+    background-image: url(./assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+  }
+
+  .image-background.image-2 {
+    background-image: url(./assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+  }
+
+  .image-background.image-3 {
+    background-image: url(./assets/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+  }
+
+  .image-background.image-4 {
+    background-image: url(./assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+  }
+
+  .image-background.image-5 {
+    background-image: url(./assets/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+  }
+
+  .image-background.image-6 {
+    background-image: url(./assets/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+  }
+
+  .image-background.image-7 {
+    background-image: url(./assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+  }
+
+  .image-background.image-8 {
+    background-image: url(./assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+  }
+
+  .image-background.image-9 {
+    background-image: url(./assets/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+  }
+
+  .image-background.image-10 {
+    background-image: url(./assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  }
+
+  .image-background.image-11 {
+    background-image: url(./assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  }
+
+  .image-background.image-12 {
+    background-image: url(./assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+  }
+
+  .image-background.image-13 {
+    background-image: url(./assets/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  }
+
+  .image-background.image-14 {
+    background-image: url(./assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  }
+
+  .image-background.image-15 {
+    background-image: url(./assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  }
+
+  /* Footer */
+  footer > .container > .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-column {
+    width: 33%;
+  }
+
+  .footer-container {
+    justify-content: space-between;
+  }
+
+  .footer-link {
+    margin-bottom: 0.75rem;
+  }
+
+  .see-more {
+    padding-left: 0.5rem;
+  }
 }
