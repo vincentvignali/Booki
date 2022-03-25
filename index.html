@@ -32,16 +32,19 @@
       </nav>
     </header>
 
-    <section id="search" class="container">
-      <div class="">
+    <section id="search">
+      <div class="container">
         <div class="title">
           <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
           <p>En plein centre ville ou en pleine nature</p>
         </div>
         <div class="flex btn-component">
           <i class="fas fa-map-marker-alt map-logo"></i>
-          <input type="text" />
-          <button class="button"><b>Rechercher</b></button>
+          <input type="text" placeholder="Marseille, France" />
+          <button class="button">
+            <b class="button-text">Rechercher</b
+            ><i class="fas fa-search button-icon"></i>
+          </button>
         </div>
         <div class="flex filter-section">
           <b>Filtres</b>
@@ -60,11 +63,11 @@
             >
           </div>
         </div>
+        <div class="flex">
+          <i class="fas fa-info logo-circle"></i>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
       </div>
-      <p>
-        <i class="fas fa-info logo-circle"></i>Plus de 500 logements sont
-        disponibles dans cette ville
-      </p>
     </section>
 
     <section id="result">
@@ -93,14 +96,14 @@
                 <a href="">
                   <div class="image-background image-2"></div>
                   <div class="card-content">
-                    <h3>Auberge la cannebière</h3>
-                    <p>Nuit à partir de <b>25€</b></p>
+                    <h3>Hôtel du port</h3>
+                    <p>Nuit à partir de <b>52€</b></p>
                     <div class="star-container">
                       <i class="star-icon fas fa-star"></i>
                       <i class="star-icon fas fa-star"></i>
                       <i class="star-icon fas fa-star"></i>
                       <i class="star-icon fas fa-star"></i>
-                      <i class="star-icon off fas fa-star"></i>
+                      <i class="star-icon fas fa-star"></i>
                     </div>
                   </div>
                 </a>
@@ -109,8 +112,8 @@
                 <a href="">
                   <div class="image-background image-3"></div>
                   <div class="card-content">
-                    <h3>Auberge la cannebière</h3>
-                    <p>Nuit à partir de <b>25€</b></p>
+                    <h3>Hôtel les mouettes</h3>
+                    <p>Nuit à partir de <b>76€</b></p>
                     <div class="star-container">
                       <i class="star-icon fas fa-star"></i>
                       <i class="star-icon fas fa-star"></i>
@@ -127,13 +130,13 @@
                 <a href="">
                   <div class="image-background image-4"></div>
                   <div class="card-content">
-                    <h3>Auberge la cannebière</h3>
-                    <p>Nuit à partir de <b>25€</b></p>
+                    <h3>Hòtel de la mer</h3>
+                    <p>Nuit à partir de <b>46€</b></p>
                     <div class="star-container">
                       <i class="star-icon fas fa-star"></i>
                       <i class="star-icon fas fa-star"></i>
                       <i class="star-icon fas fa-star"></i>
-                      <i class="star-icon fas fa-star"></i>
+                      <i class="star-icon off fas fa-star"></i>
                       <i class="star-icon off fas fa-star"></i>
                     </div>
                   </div>
@@ -143,8 +146,8 @@
                 <a href="">
                   <div class="image-background image-5"></div>
                   <div class="card-content">
-                    <h3>Auberge la cannebière</h3>
-                    <p>Nuit à partir de <b>25€</b></p>
+                    <h3>Auberge le panier</h3>
+                    <p>Nuit à partir de <b>23€</b></p>
                     <div class="star-container">
                       <i class="star-icon fas fa-star"></i>
                       <i class="star-icon fas fa-star"></i>
@@ -159,14 +162,14 @@
                 <a href="">
                   <div class="image-background image-6"></div>
                   <div class="card-content">
-                    <h3>Auberge la cannebière</h3>
-                    <p>Nuit à partir de <b>25€</b></p>
+                    <h3>Hôtel chez Amina</h3>
+                    <p>Nuit à partir de <b>96€</b></p>
                     <div class="star-container">
                       <i class="star-icon fas fa-star"></i>
                       <i class="star-icon fas fa-star"></i>
                       <i class="star-icon fas fa-star"></i>
                       <i class="star-icon fas fa-star"></i>
-                      <i class="star-icon off fas fa-star"></i>
+                      <i class="star-icon fas fa-star"></i>
                     </div>
                   </div>
                 </a>
@@ -246,20 +249,26 @@
             <div class="card-activity card-activity-main">
               <a href="#">
                 <div class="image-background image-10"></div>
-                <p><b>Vieux Port</b></p>
+                <div class="card-content-activity">
+                  <p><b>Vieux Port</b></p>
+                </div>
               </a>
             </div>
             <div class="card-activity-sub-container">
               <div class="card-activity card-activity-second">
                 <a href="#">
                   <div class="image-background image-11"></div>
-                  <p><b>Fort de Pomègues</b></p>
+                  <div class="card-content-activity">
+                    <p><b>Fort de Pomègues</b></p>
+                  </div>
                 </a>
               </div>
               <div class="card-activity card-activity-third">
                 <a href="#">
                   <div class="image-background image-12"></div>
-                  <p><b>îles du Frioul</b></p>
+                  <div class="card-content-activity">
+                    <p><b>îles du Frioul</b></p>
+                  </div>
                 </a>
               </div>
             </div>
@@ -268,20 +277,26 @@
             <div class="card-activity card-activity-main">
               <a href="#">
                 <div class="image-background image-13"></div>
-                <p><b>Parc National des Calanques</b></p>
+                <div class="card-content-activity">
+                  <p><b>Parc National des Calanques</b></p>
+                </div>
               </a>
             </div>
             <div class="card-activity-sub-container reversed">
               <div class="card-activity card-activity-second">
                 <a href="#">
                   <div class="image-background image-14"></div>
-                  <p><b>Notre-Dame-de-la-Garde</b></p>
+                  <div class="card-content-activity">
+                    <p><b>Parc longchamp</b></p>
+                  </div>
                 </a>
               </div>
               <div class="card-activity card-activity-third">
                 <a href="#">
                   <div class="image-background image-15"></div>
-                  <p><b>Parc Longchamp</b></p>
+                  <div class="card-content-activity">
+                    <p><b>Notre-Dame-de-la-Garde</b></p>
+                  </div>
                 </a>
               </div>
             </div>
