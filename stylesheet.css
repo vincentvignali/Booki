@@ -359,7 +359,7 @@ a:hover {
 }
 
 .card-accomodation-popular p {
-  margin: none;
+  margin: 0;
   margin-top: 0.25rem;
 }
 
